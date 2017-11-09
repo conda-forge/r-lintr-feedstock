@@ -1,4 +1,4 @@
-{% set version = '1.0.1' %}
+{% set version = '1.0.2' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/lintr_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lintr/lintr_{{ version }}.tar.gz
-  sha256: ec732d35c7ab4e9ef914cd3067b5031a724dc9e4f0eb73219c3b1c572340dc23
+  sha256: f61eb02fe102f30aedf60b8f526659623eeb87c1c520de49e45ab05645748692
 
 build:
   number: 0
@@ -67,3 +67,4 @@ extra:
   recipe-maintainers:
     - johanneskoester
     - bgruening
+    - Adrianzo
