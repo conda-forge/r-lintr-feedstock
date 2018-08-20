@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Checks adherence to a given style, syntax errors and possible semantic issues.  Supports on the fly checking of R code edited with Emacs, Vim and Sublime Text.
+Summary: Checks adherence to a given style, syntax errors and possible semantic issues.  Supports on the fly checking of R code edited with 'RStudio IDE', 'Emacs', 'Vim', 'Sublime Text' and 'Atom'.
 
 
 
@@ -16,7 +16,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-lintr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-lintr-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/r-lintr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-lintr-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-lintr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-lintr-feedstock/branch/master)
 
 Current release info
 ====================
