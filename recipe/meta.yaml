@@ -15,8 +15,9 @@ source:
   sha256: f61eb02fe102f30aedf60b8f526659623eeb87c1c520de49e45ab05645748692
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 2
+  number: 1002
 
   rpaths:
     - lib/R/lib/
@@ -66,8 +67,7 @@ about:
     on the fly checking of R code edited with 'RStudio IDE', 'Emacs', 'Vim', 'Sublime
     Text' and 'Atom'.
   license_family: MIT
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\MIT'      # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
 
 extra:
   recipe-maintainers:
