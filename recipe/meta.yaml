@@ -1,5 +1,4 @@
-{% set version = '1.0.2' %}
-
+{% set version = '1.0.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,24 +7,21 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: lintr_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/lintr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lintr/lintr_{{ version }}.tar.gz
-  sha256: f61eb02fe102f30aedf60b8f526659623eeb87c1c520de49e45ab05645748692
+  sha256: bd226d2248716d8a7748703e15e490d2a738fd714a7586f9d8ad8937027e9a6e
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
-
+  number: 1000
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
 
   host:
     - r-base
@@ -40,7 +36,6 @@ requirements:
     - r-rstudioapi >=0.2
     - r-stringdist
     - r-testthat
-
   run:
     - r-base
     - r-codetools
@@ -78,3 +73,24 @@ extra:
     - cbrueffer
     - Adrianzo
     - dbast
+
+# Package: lintr
+# Title: A 'Linter' for R Code
+# Version: 1.0.3
+# Authors@R: person("Jim", "Hester", email = "james.f.hester@gmail.com", role = c("aut", "cre"))
+# URL: https://github.com/jimhester/lintr
+# BugReports: https://github.com/jimhester/lintr/issues
+# Description: Checks adherence to a given style, syntax errors and possible semantic issues.  Supports on the fly checking of R code edited with 'RStudio IDE', 'Emacs', 'Vim', 'Sublime Text' and 'Atom'.
+# Depends: R (>= 3.1.1)
+# Imports: rex, crayon, codetools, stringdist, testthat, digest, igraph, rstudioapi (>= 0.2), httr, jsonlite, knitr, stats, utils
+# Suggests: rmarkdown, mockery
+# License: MIT + file LICENSE
+# LazyData: true
+# VignetteBuilder: knitr
+# RoxygenNote: 6.0.1
+# NeedsCompilation: no
+# Packaged: 2018-11-08 16:39:01 UTC; jhester
+# Author: Jim Hester [aut, cre]
+# Maintainer: Jim Hester <james.f.hester@gmail.com>
+# Repository: CRAN
+# Date/Publication: 2018-11-08 17:10:10 UTC
