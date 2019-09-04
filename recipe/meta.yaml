@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  number: 1002
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -62,7 +62,9 @@ about:
     on the fly checking of R code edited with 'RStudio IDE', 'Emacs', 'Vim', 'Sublime
     Text' and 'Atom'.
   license_family: MIT
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file: 
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
 
 extra:
   recipe-maintainers:
