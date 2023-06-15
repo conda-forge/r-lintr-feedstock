@@ -3,11 +3,13 @@ About r-lintr-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lintr-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jimhester/lintr
+Home: https://lintr.r-lib.org
 
 Package license: MIT
 
 Summary: Checks adherence to a given style, syntax errors and possible semantic issues.  Supports on the fly checking of R code edited with 'RStudio IDE', 'Emacs', 'Vim', 'Sublime Text' and 'Atom'.
+
+Development: https://github.com/jimhester/lintr
 
 Current build status
 ====================
