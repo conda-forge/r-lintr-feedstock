@@ -1,4 +1,4 @@
-{% set version = "3.0.2" %}
+{% set version = "3.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lintr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lintr/lintr_{{ version }}.tar.gz
-  sha256: 9f6a70affea78d2092f40a7ba8961615d48b0c4ae8044ec72a1422a4342d34c9
+  sha256: f71e5953d30156380f4776be5fe55a4f7a414ab4a2c26be475c1ee007f9663cd
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
