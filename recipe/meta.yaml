@@ -1,4 +1,4 @@
-{% set version = "3.3.0-1" %}
+{% set version = "3.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lintr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lintr/lintr_{{ version }}.tar.gz
-  sha256: b12964c46fcd77d235e98af10586e103e50a4109affa9ede547c9ee75cffca06
+  sha256: 54144e68b70289edff7eed4fc8d00efacd1ddd51c032dc1e88bfb657c10a89dc
 
 build:
   number: 0
